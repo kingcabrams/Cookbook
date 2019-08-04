@@ -1,5 +1,7 @@
 import random
 
+# TODO Expand this project
+
 
 def main():
     # Game setup
