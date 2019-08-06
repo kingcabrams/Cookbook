@@ -20,6 +20,6 @@ def get_answer(answer_number):
     elif answer_number == 9:
         return 'Very doubtful'
 
-random_num = random.randint(1,9)
-fortune = get_answer(random_num)
+rand_num = random.randint(1,9)
+fortune = get_answer(rand_num)
 print(fortune)
