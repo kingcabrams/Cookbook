@@ -41,6 +41,7 @@ def main():
     print(course_str)
     print(new_list)
 
+    # Sublists with Slices
     print(courses[0:2])
     print(courses[:2])  # Assumes first value as first index
     print(courses[1:])  # Assumes second value as last index
