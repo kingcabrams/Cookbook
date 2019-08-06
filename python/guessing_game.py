@@ -4,7 +4,7 @@ import random
 def main():
     # Game setup
     print("Welcome to the guessing game")
-    number_of_guesses = 7  # User has seven guesses before losing the game
+    number_of_guesses = 6  # User has six guesses before losing the game
     user_won = False
 
     # Computer guesses a random number between 1 and 10
