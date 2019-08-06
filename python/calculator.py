@@ -7,6 +7,7 @@ def main():
     print("'/' for division")
     print("'**' for exponents")
     print("'%' for remainder division")
+    print("'//' for floor division")
     operator = input()
 
     num_two = int(input("Enter a second number: "))
@@ -21,8 +22,10 @@ def main():
         print(num_one / num_two)  # Integer division
     elif operator == "**":
         print(num_one**num_two)  # Integer exponents
-    else:
+    elif operator == "%":
         print(num_one % num_two)  # Remainder division
+    else:
+        print(num_one // num_two)  # Floor division
 
 
 main()
