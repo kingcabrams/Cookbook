@@ -11,15 +11,14 @@ def collatz(number):
 
 def main():
     print("Enter a number")
+    
     while True:
         number = input()
-
         try:
             collatz(int(number))
             break
         except ValueError:
             print("Please enter a number")
         
-
-    
+  
 main()
