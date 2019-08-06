@@ -6,6 +6,7 @@ def main():
     print("Welcome to the guessing game")
     print("Try and guess my number")
     print("It is between 1 and 50")
+    print("")
     number_of_guesses = 6  # User has six guesses before losing the game
     user_won = False
 
