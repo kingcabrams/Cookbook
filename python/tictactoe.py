@@ -1,5 +1,5 @@
-the_board = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ', 'mid-L': ' ', 'mid-M': ' ', 'mid-R': ' ',
-        'low-L': ' ', 'low-M': ' ', 'low-R': ' '}
+the_board = {'1': ' ', '2': ' ', '3': ' ', '4': ' ', '5': ' ', '6': ' ',
+        '7': ' ', '8': ' ', '9': ' '}
 
 def print_board(board):
     print(board['1'] + '|' + board['2'] + '|' + board['3'])
