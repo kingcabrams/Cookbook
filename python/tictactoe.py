@@ -2,11 +2,11 @@ the_board = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ', 'mid-L': ' ', 'mid-M': ' 
         'low-L': ' ', 'low-M': ' ', 'low-R': ' '}
 
 def print_board(board):
-    print(board['top-L'] + '|' + board['top-M'] + '|' + board['top-R'])
+    print(board['1'] + '|' + board['2'] + '|' + board['3'])
     print('-+-+-')
-    print(board['mid-L'] + '|' + board['mid-M'] + '|' + board['mid-R'])
+    print(board['4'] + '|' + board['5'] + '|' + board['6'])
     print('-+-+-')
-    print(board['low-L'] + '|' + board['low-M'] + '|' + board['low-R'])
+    print(board['7'] + '|' + board['8'] + '|' + board['9'])
 
 turn = 'X'
 for i in range(9):
