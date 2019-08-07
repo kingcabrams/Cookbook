@@ -1,5 +1,3 @@
- Loads all keywords to clipboard.
-
 import sys, pyperclip, shelve
 
 mcb_shelf = shelve.open('mcb')
