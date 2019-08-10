@@ -15,7 +15,11 @@ try:
     elif sys.argv[1].lower() == 'login':
         username = input("Enter your username: ")
         password = getpass.getpass("Enter your password: ")
-        print("Welcome back " + username) if username in s else print("Login not found please create a new user.")
+        if username in s:
+            if s[username] == password:
+                print("Welcome back " + username)
+            else:
+                print("Incorrect login information")
     elif sys.argv[1].lower() == 'delete':
         username = input("Enter the name of the user you would like to delete: ")
         password = getpass.getpass("Enter their password: ")
