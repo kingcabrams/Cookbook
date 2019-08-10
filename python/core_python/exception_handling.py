@@ -1,6 +1,6 @@
-def spam(divideBy):
+def spam(divide_by):
     try:
-        return 42 / divideBy
+        return 42 / divide_by
     except ZeroDivisionError:
         print('Error: Invalid argument.')
 
