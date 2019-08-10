@@ -24,7 +24,7 @@ os.unlink(path)  # Deletes file at path
 os.rmdir(path)  # Deletes folder at path
 
 # Renaming a directory tree
-os.walk(path) # Returns folder's name, a list of folders in the current folder, and a list of strings of the files in the current folder
+os.walk(path)  # Returns folder name, folders in folder, files in folder 
 
 # Execute commands
 os.system("ls")

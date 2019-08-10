@@ -12,4 +12,8 @@ shutil.move(source, new_file/new_source)  # Moves file and renames
 # Permanently deleting files and folders
 shutil.rmtree(path)  # Deletes file tree from path
 
+import send2trash
+
+# Safe delete with send2trash
+send2trash.send2trash(file) # Sends file to trash
 
