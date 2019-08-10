@@ -19,6 +19,13 @@ print(os.path.exists("os_funcs.py"))
 os.chdir("../")
 print(os.path.exists("os"))
 
+# Permanently deleting files and folders
+os.unlink(path)  # Deletes file at path
+os.rmdir(path)  # Deletes folder at path
+
+# Renaming a directory tree
+os.walk(path) # Returns folder's name, a list of folders in the current folder, and a list of strings of the files in the current folder
+
 # Execute commands
 os.system("ls")
 

@@ -6,12 +6,13 @@
 
 # TODO: check if password contains at least one digit
 
-import re
+import re, getpass
 
-length_checker = re.compile(r'.{8,}')  # >= 8 characters
-upper_case_checker = re.compile(r'[A-Z]')  # Contains a upper case letter
-lower_case_checker = re.compile(r'[a-z]')  # Contains a lower case letter
-digit_checker = re.compile(r'\d')  # Contains a digit
+length_checker = re.compile(r".{8,}")  # >= 8 characters
+upper_case_checker = re.compile(r"[A-Z]")  # Contains a upper case letter
+lower_case_checker = re.compile(r"[a-z]")  # Contains a lower case letter
+digit_checker = re.compile(r"\d")  # Contains a digit
+
 
 def password_checker(password):
     if length_checker.search(password) == None:
@@ -22,10 +23,11 @@ def password_checker(password):
         return False
     if digit_checker.search(password) == None:
         return False
-    else: 
+    else:
         return True
 
+
 print("Enter your password to check if it is secure")
-password = input()
+password = getpass.getpass()
 print("Password is secure:")
 print(password_checker(password))

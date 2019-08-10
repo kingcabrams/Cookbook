@@ -1,0 +1,15 @@
+import shutil
+
+# Copy files and folders
+shutil.copy(source, destination)
+shutil.copytree(folder, new_folder)  # Copy folder and contents
+
+# Moving and renaming files and folders
+shutil.move(source, destination)  # Moves file to folder
+shutil.move(source, new_file)  # Renames source in current location
+shutil.move(source, new_file/new_source)  # Moves file and renames
+
+# Permanently deleting files and folders
+shutil.rmtree(path)  # Deletes file tree from path
+
+
